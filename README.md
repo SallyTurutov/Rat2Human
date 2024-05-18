@@ -23,7 +23,7 @@ The Rat2Human model is designed to optimize molecular activity from rats to huma
 
 ### Training and Pre-training the Model
 
-You can skip this section by using the checkpoint available in `final_results/checkpoints` (there is one for the model after pre-training and one for the final Rat2Human model).
+You can skip this section by using the checkpoint available: one for the model after [pre-training](https://drive.google.com/file/d/1uwpTL2GhRh_nb5uheZojqgb1qLSVn4TI/view?usp=sharing) and one for the [final Rat2Human model](https://drive.google.com/file/d/1MkKxZWvtqbuj_CzHLfNUczZ8QWilEyvi/view?usp=sharing)).
 
 4. **Train the Model:**
    ```bash
