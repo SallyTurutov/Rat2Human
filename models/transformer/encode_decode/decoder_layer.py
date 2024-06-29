@@ -15,7 +15,6 @@ class DecoderLayer(nn.Module):
         self.feed_forward = feed_forward
         self.sublayer = clones(SublayerConnection(size, dropout), 3)
 
-    # def forward(self, x, memory, src_mask, trg_mask):
     def forward(self, x, memory, src_mask, trg_mask):
         "Follow Figure 1 (right) for connections."
         m = memory
