@@ -54,7 +54,6 @@ def train_opts(parser):
     group.add_argument('--lambda_attention', type=float, default=0.3, help='The attention lambda in the loss')
     group.add_argument('--lambda_distance', type=float, default=0.3, help='The distance lambda in the loss')
     group.add_argument('--distance_matrix_kernel', type=str, default='softmax', help='The distance matrix kernel')
-    group.add_argument('--use_embedding_tissue_specification', type=bool, default=False, help='Whether to use tissue-specific embedding')
     group.add_argument('--use_encoder_mol_attention', type=bool, default=True, help='Whether to use molecule self-attention')
     group.add_argument('--use_generator_tissue_specification', type=bool, default=True, help='Whether to use tissue-specific generator')
 
