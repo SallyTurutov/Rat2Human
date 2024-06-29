@@ -9,10 +9,10 @@ def train_opts(parser):
     # Common training options
     group = parser.add_argument_group('Training_options')
     group.add_argument('--batch-size', type=int, default=64, help='Batch size for training')
-    group.add_argument('--num-epoch', type=int, default=65, help='Number of training steps')
-    group.add_argument('--starting-epoch', type=int, default=130, help='Training from given starting epoch')
+    group.add_argument('--num-epoch', type=int, default=85, help='Number of training steps')
+    group.add_argument('--starting-epoch', type=int, default=1, help='Training from given starting epoch')
     group.add_argument('--use-data-parallel', help='Use pytorch DataParallel', action='store_true')
-    group.add_argument('--pretrain-model', default=False, help='Whether to pretrain the model', action='store_true')
+    group.add_argument('--pretrain-model', default=True, help='Whether to pretrain the model', action='store_true')
     group.add_argument('--use-pretrained', default=False, help='Whether to use pretrained model', action='store_true')
     group.add_argument('--num-pretrain-epoch', type=int, default=1, help='Number of training steps')
 
