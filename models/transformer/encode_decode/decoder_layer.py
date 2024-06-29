@@ -22,10 +22,3 @@ class DecoderLayer(nn.Module):
         x = self.sublayer[0](x, lambda x: self.self_attn(x, x, x, trg_mask))
         x = self.sublayer[1](x, lambda x: self.src_attn(x, m, m, src_mask))
         return self.sublayer[2](x, self.feed_forward)
-
-    # def forward(self, x, memory, src_mask, trg_mask, src_adj_matrix, src_distances_matrix, trg_adj_matrix, trg_distances_matrix):
-    #     "Follow Figure 1 (right) for connections."
-    #     m = memory
-    #     x = self.sublayer[0](x, lambda x: self.self_attn(x, x, x, trg_adj_matrix, trg_distances_matrix, trg_mask))
-    #     x = self.sublayer[1](x, lambda x: self.src_attn(x, m, m, src_adj_matrix, src_distances_matrix, src_mask))
-    #     return self.sublayer[2](x, self.feed_forward)
